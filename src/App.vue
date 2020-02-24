@@ -4,7 +4,8 @@
       <h1 class="project-name">Vue-FullscreenLoading</h1>
       <h2 class="project-desc">A lightweight fullscreen loading effect for vue</h2>
     </div>
-    <button @click="click">ShowLoadingUIAuto</button>
+    <button @click="clickDefault">ShowLoadingUIDefault</button>
+    <button @click="clickAuto">ShowLoadingUIAuto</button>
   </div>
 </template>
 
@@ -18,7 +19,7 @@ export default {
   },
 
   methods: {
-    click() {
+    clickDefault() {
       let loadingui = this.$loadingui({
         type: 'default',
         callback: () =>{
@@ -30,7 +31,25 @@ export default {
       let obj = setInterval(()=>{
         percent += 2
         loadingui.loadPercent = percent
-        if (percent >= 100) {
+        if (percent >= 50) {
+          loadingui.close()
+          clearInterval(obj)
+        }
+      }, 50)
+    },
+
+    clickAuto() {
+      let loadingui = this.$loadingui({
+        type: 'auto',
+        callback: () =>{
+          // eslint-disable-next-line no-console
+          console.log("finish")
+        },
+      })
+      let percent = 0
+      let obj = setInterval(()=>{
+        percent += 1
+        if (percent >= 50) {
           loadingui.close()
           clearInterval(obj)
         }

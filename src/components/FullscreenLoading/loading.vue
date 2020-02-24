@@ -2,7 +2,6 @@
     <div class="preloader" v-if="showLoading">
         <div class="preloader-progress">
             <div class="preloader-progress-bar" :style="{ width: loadPercent + '%' }"></div>
-            <!--                <div>{{loadPercent}}</div>-->
         </div>
     </div>
 </template>
