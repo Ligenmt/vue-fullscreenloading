@@ -6,14 +6,14 @@
 
 ## 效果预览
 
-![Image text](https://ligenmt.github.io/resources/images/vue-fullscreenloading-auto.gif)
+![Image text](https://ligenmt.gitee.io/resources/images/auto.gif)
 
 
 ## 赞赏
 
 请作者喝瓶可乐吧！(微信号：ligenmt)
 
-![微信扫一扫](https://ligenmt.github.io/resources/images/weixin.png)
+![微信扫一扫](https://ligenmt.gitee.io/resources/images/weixin.png)
 
 ## 特别鸣谢
 
