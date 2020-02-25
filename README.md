@@ -71,4 +71,4 @@
 
 ## License
 
-[MIT](https://github.com/lin-xin/vue-manage-system/blob/master/LICENSE)
+[MIT](https://github.com/ligenmt/vue-fullscreenloading/blob/master/LICENSE)
